@@ -323,32 +323,85 @@ form input[type="email"] {
     border-radius: 30px;
 }
 
+
+/* FOOTER TEXT LINK  */
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .foter {
     margin-top: 14rem;
     padding: 20px;
 }
 
-.location {
-    color: var(--WHITE);
-    
-}
+
 .foter {
     gap: 2rem;
     display: flex;
-    
+    justify-content: space-between;
+
 }
 
-.loc {
+
+.call,
+.email {
     display: flex;
     gap: 1rem;
 }
 
-
-
-.logoo {
-    position: relative;
-    top: -60px;
+.footer img {
+    display: inline;
 }
+
+.foter {
+    width: min(100% - 15vw);
+    margin-inline: auto;
+    display: flex;
+    color: var(--OPAQUE-WHITE) !important;
+}
+
+
+.location-1 {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.footer a {
+    color: var(--OPAQUE-WHITE);
+    text-decoration: none;
+   padding-bottom: .6rem;
+}
+
+.about, .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+}
+.footer a:hover {
+    color: var(--WHITE);
+}
+.foter  {
+    cursor: pointer;
+}
+i {
+    border: 1px solid var(--OPAQUE-WHITE);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: var(--CYAN-ACTION-GRADIENT);
+    text-align: center;
+    padding: 10px;
+    margin: 0  10px;
+    display: flex;
+}
+i:hover {
+    border: 1px solid var(--CYAN-ACTION-GRADIENT);
+}
+
 
 @media screen and (max-width: 768px) {
     .topnav img {
@@ -444,6 +497,26 @@ form input[type="email"] {
         width: 90%;
         padding: 15px 20px;
     }
+
+    .foter {
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: min(100% - 30vw);
+        margin-inline: auto;
+    }
+
+  
+
+    footer {
+        height: auto;
+    }
+    i {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1128px) {
@@ -470,5 +543,9 @@ form input[type="email"] {
 
     .btn:nth-child(2) {
         padding: 12px 20px;
+    }
+    .foter {
+        width: min(100% - 20vw);
+            margin-inline: auto;
     }
 }
